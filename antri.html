@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FORM ANTRIAN</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f1f1f1;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      width: 400px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    input[type="text"] {
+      padding: 8px;
+      margin-bottom: 10px;
+      width: 100%;
+      border-radius: 4px;
+      border: 1px solid #ccc; 
+    }
+
+    select {
+      padding: 8px;
+      margin-bottom: 10px;
+      width: 100%;
+      border-radius: 4px;
+      border: 1px solid #ccc; 
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>FORM ANTRIAN</h1>
+    <form action="antri.php" method="POST">
+      <input type="text" name="nama" placeholder="Masukkan Nama Anda" required><br>
+      <select name="modelRambut" required>
+        <option value="">Pilih Model Rambut</option>
+        <option value="Bun Cut">Bun Cut</option>
+        <option value="Bowl Cut">Bowl Cut</option>
+        <option value="Crew Cut">Crew Cut</option>
+      </select><br>
+      <br>
+      <button type="submit">KIRIM</button>
+    </form>
+  </div>
+</body>
+</html>
